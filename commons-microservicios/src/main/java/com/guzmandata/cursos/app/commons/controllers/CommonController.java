@@ -43,7 +43,7 @@ public class CommonController<E, S extends CommonService<E>> {
 		return ResponseEntity.status(HttpStatus.CREATED).body(entitydb);
 	}
 
-	@DeleteMapping("/{id")
+	@DeleteMapping("/{id}")
 	public ResponseEntity<?> deleteById(@PathVariable Long id) {
 
 		service.deleteById(id);
